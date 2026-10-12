@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Hilbert functions of chopped ideals of general plane points"
+  description: >-
+    Formalizes Theorem 1.1 and Corollary 5.1 of Hilbert Functions of Chopped
+    Ideals of General Plane Points over arbitrary characteristic-zero fields:
+    the full Hilbert function of degree-d chopped point ideals, the
+    regular-sequence cases, the least stabilization degree, and the Expected
+    Syzygy Conjecture.
+  authors: ["Vlado Vojdanovski"]
+  license: "Apache-2.0"
+  responsible_maintainers: ["Vlado Vojdanovski"]
+
+classification:
+  arxiv: ["math.AG", "math.AC"]
+  msc2020: ["13D40", "13D02", "14N05"]
+
+sources:
+  - title: "Hilbert Functions of Chopped Ideals of General Plane Points"
+    location: "Theorem 1.1 and Corollary 5.1"
+    relationship: "formalizes"
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6"]
+      framework: "OpenAI Codex"
+      tool_setup: "AI-assisted Lean proof development with coordinated Codex agents."
+
+review:
+  status: "agent-reviewed"
